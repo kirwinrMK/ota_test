@@ -22,7 +22,7 @@ void setup(void) {
   const esp_partition_t partition = *esp_ota_get_running_partition();
   Serial.println(partition.label);
   
-  const esp_partition_t *partition2 = esp_partition_find_first(ESP_PARTITION_TYPE_ANY, ESP_PARTITION_SUBTYPE_ANY, "app1");
+  const esp_partition_t *partition2 = esp_partition_find_first(ESP_PARTITION_TYPE_ANY, ESP_PARTITION_SUBTYPE_ANY, "app0");
   // Serial.println(partition2->label);
   // esp_ota_img_states_t *ota_state;
   // esp_err_t error = esp_ota_get_state_partition(partition2, ota_state);
